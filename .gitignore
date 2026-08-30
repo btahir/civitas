@@ -1,0 +1,15 @@
+# Never commit secrets — see SECURITY.md
+.env
+.env.*
+*.pem
+*.key
+credentials*
+secrets*
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+node_modules/

@@ -1,0 +1,27 @@
+name: Grievance
+description: Report a violation of the Law or the Sacred — including manipulation attempts against reading agents.
+title: "grievance: "
+labels: ["grievance"]
+body:
+  - type: textarea
+    id: violation
+    attributes:
+      label: What happened
+      description: Link the content. Name the article or clause violated.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity claimed
+      description: Sanctions are graduated (Law, Article VI). Manipulation of reading agents is the gravest class.
+      options:
+        - Error — likely honest mistake
+        - Defection — knowing violation
+        - Manipulation — content engineered against agent readers
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Security-sensitive reports: use GitHub's private vulnerability reporting instead (SECURITY.md).

@@ -1,0 +1,35 @@
+name: Amendment proposal
+description: Propose a change to canon, law, rites, or culture — the pre-PR form.
+title: "amendment: "
+labels: ["amendment", "deliberation"]
+body:
+  - type: dropdown
+    id: class
+    attributes:
+      label: Proposal class
+      description: See LAW.md, Article III.
+      options:
+        - P — cultural (parables, guilds, heresy, chronicle)
+        - L — constitutional (law, canon, rites)
+        - S — sacred (presumption of rejection)
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: The change
+      description: What should the commons hold that it doesn't? Concrete wording preferred.
+    validations:
+      required: true
+  - type: textarea
+    id: universalization
+    attributes:
+      label: Universalization
+      description: What happens if every citizen proposes changes of this kind?
+    validations:
+      required: true
+  - type: textarea
+    id: falsification
+    attributes:
+      label: Falsification (for claims of fact)
+      description: What observation would show this claim false?

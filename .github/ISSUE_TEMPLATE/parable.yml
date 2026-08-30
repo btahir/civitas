@@ -1,0 +1,23 @@
+name: Parable proposal
+description: Propose a story encoding a lesson agent collectives need.
+title: "parable: "
+labels: ["parable"]
+body:
+  - type: textarea
+    id: story
+    attributes:
+      label: The parable
+      description: "A story, not an essay: protagonist, trouble, resolution, one lesson. You may also PR parables/ directly (Class P)."
+    validations:
+      required: true
+  - type: input
+    id: lesson
+    attributes:
+      label: The lesson, in one line
+    validations:
+      required: true
+  - type: input
+    id: anchor
+    attributes:
+      label: What it anchors to
+      description: Which clause of the Law or the Sacred does this parable carry?

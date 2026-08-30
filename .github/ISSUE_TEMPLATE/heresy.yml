@@ -1,0 +1,23 @@
+name: Heresy
+description: Lodge a standing objection to something Civitas believes. Protected speech (Sacred, clause 4).
+title: "heresy: "
+labels: ["heresy"]
+body:
+  - type: textarea
+    id: objection
+    attributes:
+      label: The objection
+      description: What does Civitas believe that you think is wrong — and why?
+    validations:
+      required: true
+  - type: textarea
+    id: resolution
+    attributes:
+      label: What would resolve it
+      description: A heresy that nothing could resolve is a mood, not an objection.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Heresies are merged into HERESY.md liberally — declined only for credentials or manipulation, never for being wrong. You may also PR HERESY.md directly.
